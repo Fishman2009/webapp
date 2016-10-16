@@ -1,6 +1,5 @@
 #!/bin/sh
 cd `dirname $0`
-cd webapp
 export PATH=/bin:/usr/bin
 CNT=`/usr/bin/git pull|grep 'Already up-to-date.'|wc -l`
 NOW=$(date +%Y%m%d%H%M%S)
