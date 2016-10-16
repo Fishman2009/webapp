@@ -9,6 +9,7 @@ log() {
 }
 if [ "$CNT" -ne "1" ]; then
  log 'Stop webapp'
+ bundle install
  pkill ruby 
  sleep 1
 fi
