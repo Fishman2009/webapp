@@ -14,7 +14,7 @@ if [ "$CNT" -ne "1" ]; then
 fi
 if [ -z $(pgrep ruby) ]; then
  log 'Start webapp'
- /bin/sh run.sh
+ ./run.sh
 # sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
 else
  log 'webapp Status OK'
